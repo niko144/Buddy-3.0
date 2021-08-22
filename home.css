@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap');
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+* {   padding: 0;   margin: 0;}
+
+body {
+  /* JUST FOR NOW - REMOVE WHEN DONE*/
+  height: 999px;
+  background: linear-gradient(to left, #4E4E50, #C2CAD0);
+}
+
+.style {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+#navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.6s;
+}
+
+.sticky {
+  background: #1A1A1D;
+  padding: 20px;
+}
+
+.sticky .logoL {
+  float: left;
+  margin-right: -300px;
+  margin-left: -300px;
+  width: 60%;
+  height: auto;
+  margin-top: -60px;
+}
+
+.sticky .navList ul li {
+  float: right;
+  font-size: 16px;
+  margin-top: -50px;
+  margin-bottom: -10;
+}
+
+#navigation img {
+  object-fit: cover;
+  max-width: 15%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 60px;
+}
+
+.navList ul li {
+  float: left;
+  padding: 0 10px;
+}
+
+.navList ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.navList ul li a {
+  color: black;
+}
+
+.sticky .navList ul li a {
+  color: white;
+}
+
+.heading h1 {
+  font-size: 55px;
+  color: #6F2232;
+}
+
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+
+.slideshow {
+  margin-top: -300px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #C3073F;
+}
+
+.button:hover {
+    background-color: #950740;
+}
+    
+.sticky img {
+  width: 8%;
+  height: wuto;
+  display: flex;
+}
+
+.content h1 {
+    font-size: 50px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.contain {
+    background: linear-gradient(to left, #B5083E, #1E1C1D);
+    width: 100%;
+    height: 450px;
+}
+
+.footer {
+    background-color: 1A1A1D;
+}
+
+.foot h1 {
+    font-size: 20px;
+    color: white;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+.foot a {
+    font-size: 15px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.footer{
+    display: flex;
+    float: left;
+    height: 300px;
+}

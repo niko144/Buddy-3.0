@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy || Home</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    
+    <!-- navigation -->
+    <div id="navigation">
+        <div class="logoL">
+            <img src="../Assests/logoWithText.png" id="logo" alt="logo">
+        </div>
+        <div class="navList">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Featured Games</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">Trailers</a></li>
+                <li><a href="#">Future Incomings</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Subscriptions</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- heading -->
+    <div class="heading style">
+      <h1>Your Gateway To Buddy</h1>
+    </div>
+    
+    <div class="slideshow style">
+            <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="../Assests/image1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="../Assests/image2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="../Assests/image3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="../Assests/image4.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+    </div>
+    
+    <div class="contain style">
+        <center>
+            <div class="content">
+                <h1>Here at buddy, find the best games to play</h1>
+                <button class="button" type="button">Lets Go!</button>
+            </div>
+        </center>
+    </div>
+    
+    <div class="footer style">
+        <div class="foote1">
+            <div class="foot">
+                <h1>Buddy</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Featured Games</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Genres</a></li>
+                    <li><a href="#">Trailers</a></li>
+                    <li><a href="#">Future Incomings</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foote2">
+            <div class="foot">
+                <h1>Buddy</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Featured Games</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Genres</a></li>
+                    <li><a href="#">Trailers</a></li>
+                    <li><a href="#">Future Incomings</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+
+    <!-- scroll bar js -->
+    <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var navigation = document.getElementById("navigation");
+      navigation.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+    
+</body>
+</html>
